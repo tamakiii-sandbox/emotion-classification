@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.11"
 datasets = "^2.18.0"
 scikit-learn = "^1.4.1.post1"
+bert-tokenizer = "^0.1.5"
 
 
 [build-system]

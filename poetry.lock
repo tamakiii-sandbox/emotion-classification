@@ -129,6 +129,17 @@ tests-mypy = ["mypy (>=1.6)", "pytest-mypy-plugins"]
 tests-no-zope = ["attrs[tests-mypy]", "cloudpickle", "hypothesis", "pympler", "pytest (>=4.3.0)", "pytest-xdist[psutil]"]
 
 [[package]]
+name = "bert-tokenizer"
+version = "0.1.5"
+description = "A Tokenizer for Bert model"
+optional = false
+python-versions = "*"
+files = [
+    {file = "bert_tokenizer-0.1.5-py3-none-any.whl", hash = "sha256:0e7a36d937c2ae40b62dd3ff55a30f650c2f9d7a48629efed46df43181b505d9"},
+    {file = "bert_tokenizer-0.1.5.tar.gz", hash = "sha256:c75f3449f0c7743593f2513b63e289b20c9f1763063a391f3efc1c29d8564462"},
+]
+
+[[package]]
 name = "certifi"
 version = "2024.2.2"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -1308,4 +1319,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "db026b22d6a262d3bf6aa38a38f69559d22510e1c96074d5277e7fe73e950b17"
+content-hash = "925dfd9fbccd6e0cd54b480fb23cafd4837957ea7acbc623c264627b54b658a0"
