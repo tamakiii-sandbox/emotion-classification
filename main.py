@@ -5,8 +5,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 # Load and preprocess the Emotion Dataset
-dataset = load_dataset("emotion")
-train_data, test_data = train_test_split(dataset["train"], test_size=0.2, random_state=42)
+# dataset = load_dataset("emotion", split="train")
+dataset = load_dataset("emotion", split="train", trust_remote_code=True)
+dataset_list = dataset.to_list()  # Convert the dataset to a list
+train_data, test_data = train_test_split(dataset_list, test_size=0.2, random_state=42)
 train_data, val_data = train_test_split(train_data, test_size=0.1, random_state=42)
 
 # Tokenize and encode the text data
